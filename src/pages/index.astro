@@ -1,15 +1,28 @@
 ---
+const profilePic =
+  "https://paradepets.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk5MTY0ODc4NTg4NTUzMTAz/shutterstock_2273904057.jpg";
+import Main from "../layouts/Main.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Main>
+  <body>
+    <main>
+      <div class="profile">
+        <img
+          src={profilePic}
+          class="profile_pic"
+          width="100px"
+          height="100px"
+        />
+        <div class="profile_details">
+          <h1>Cool Dog</h1>
+          <h2>master of walks</h2>
+          <p>
+            being a zen master is hard work but it is enjoyable. Many walks to
+            take to get to where I am.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</Main>
