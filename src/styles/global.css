@@ -1,6 +1,8 @@
 body {
   font-family: "Inter", sans-serif;
   padding: 0 0.5rem;
+  color: var(--grey-600);
+  background: var(--background);
 }
 
 h1 {
@@ -37,4 +39,20 @@ main {
 .profile_pic {
   border-radius: 50%;
   margin: 0 2rem 1rem 0;
+}
+
+html {
+  --background: white;
+  --grey-200: #222222;
+  --grey-400: #444444;
+  --grey-600: #333333;
+  --grey-900: #111111;
+}
+
+html.dark {
+  --background: black;
+  --grey-200: #eaeaea;
+  --grey-400: #acacac;
+  --grey-600: #ffffff;
+  --grey-900: #fafafa;
 }

@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -21,8 +23,11 @@ import "../styles/global.css";
   </head>
   <body>
     <main>
+      <Navbar />
       {/* We want the content of each page to go here */}
       <slot />
+
+      <Footer < main />
     </main>
   </body>
 </html>

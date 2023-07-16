@@ -5,24 +5,18 @@ import Main from "../layouts/Main.astro";
 ---
 
 <Main>
-  <body>
-    <main>
-      <div class="profile">
-        <img
-          src={profilePic}
-          class="profile_pic"
-          width="100px"
-          height="100px"
-        />
-        <div class="profile_details">
-          <h1>Cool Dog</h1>
-          <h2>master of walks</h2>
-          <p>
-            being a zen master is hard work but it is enjoyable. Many walks to
-            take to get to where I am.
-          </p>
-        </div>
-      </div>
-    </main>
-  </body>
+  <div class="profile">
+    <img src={profilePic} class="profile_pic" width="100px" height="100px" />
+    <div class="profile_details">
+      <h1>Cool Dog</h1>
+      <h2>master of walks</h2>
+      <script>
+        console.log("hello");
+      </script>
+      <p>
+        being a zen master is hard work but it is enjoyable. Many walks to take
+        to get to where I am.
+      </p>
+    </div>
+  </div>
 </Main>
