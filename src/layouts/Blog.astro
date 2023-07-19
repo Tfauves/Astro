@@ -1,0 +1,18 @@
+---
+import type { MarkdownLayoutProps } from "astro";
+import Main from "./Main.astro";
+
+type Props = MarkdownLayoutProps<{
+  // Define the expected frontmatter props here
+  title: string;
+  poster: string;
+  subtitle: string;
+}>;
+
+// get properties from the markdown frontmatter
+const { poster, title, subtitle } = Astro.props.frontmatter;
+---
+
+<Main title="cool dog | Blog">
+  <slot />
+</Main>
