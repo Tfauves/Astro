@@ -2,6 +2,7 @@
 const profilePic =
   "https://paradepets.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk5MTY0ODc4NTg4NTUzMTAz/shutterstock_2273904057.jpg";
 import Main from "../layouts/Main.astro";
+import Cards from "../components/Cards.astro";
 ---
 
 <Main title="cool dog">
@@ -19,4 +20,26 @@ import Main from "../layouts/Main.astro";
       </p>
     </div>
   </div>
+  <Cards
+    cards={[
+      {
+        title: "Here are my guiding philosophies for life",
+        gradientFrom: "#818cf8",
+        gradientTo: "#d8b4fe",
+        to: "/philosophies",
+      },
+      {
+        title: "A summary of my work history",
+        gradientFrom: "#fde68a",
+        gradientTo: "#fca5a5",
+        to: "/work-summary",
+      },
+      {
+        title: "What I do beyond technology",
+        gradientFrom: "#6ee7b7",
+        gradientTo: "#9333ea",
+        to: "/beyond-tech",
+      },
+    ]}
+  />
 </Main>

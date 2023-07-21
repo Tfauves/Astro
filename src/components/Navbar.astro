@@ -11,6 +11,16 @@ import ThemeToggler from "../components/ThemeToggler.astro";
     <li><a href="/favTech">Favorite Tech</a></li>
   </ul>
   <ThemeToggler />
+  <script>
+    const { pathname } = window.location;
+    const activeNavigationElement = document.querySelector(
+      `nav a[href="${pathname}"]`
+    );
+
+    if (activeNavigationElement) {
+      activeNavigationElement.classList.add("active");
+    }
+  </script>
 </nav>
 
 <style>
@@ -48,5 +58,10 @@ import ThemeToggler from "../components/ThemeToggler.astro";
 
   a:hover {
     color: var(--grey-900);
+  }
+
+  a.active {
+    background: var(--grey-900);
+    color: var(--background);
   }
 </style>
