@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/Blog.astro"
-poster: "/images/sleeping-cat.jpg"
+poster: "/assets/dogworking.jpg"
 title: "Why you should sleep more"
 subtitle: "Sleep is great for you. Here's why:"
 ---
